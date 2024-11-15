@@ -1,0 +1,215 @@
+/* Container pour les services */
+.services-container {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.search-bar {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+margin-top: 120px;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+/* Grille pour les services */
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajuste les colonnes pour s'adapter à l'espace disponible */
+  gap: 10px;
+}
+
+/* Chaque élément de service */
+.service-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ajustement pour centrer le contenu */
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  width: 80%;
+}
+
+/* Image du service */
+.service-image {
+  width: 50%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Détails du service */
+.service-details {
+  padding: 20px;
+  text-align: center; /* Centrage du texte */
+}
+
+/* Titre du service */
+.service-details h2 {
+  margin-top: 0;
+  font-size: 1.5rem; /* Taille du texte */
+  font-weight: bold; /* Gras pour le titre */
+  color: #333; /* Couleur du texte */
+  line-height: 1.4; /* Hauteur de ligne pour le titre */
+}
+
+/* Description du service */
+.service-details p {
+  margin: 10px 0;
+  color: #666; /* Couleur du texte */
+  font-size: 1rem; /* Taille du texte */
+  line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+  font-family: 'Arial', sans-serif; /* Police pour le texte */
+}
+/* Style pour le conteneur des filtres */
+.filters {
+  display: flex;
+  align-items: center; /* Aligne les éléments verticalement */
+  gap: 15px; /* Espacement entre les éléments */
+  margin-bottom: 20px;
+}
+
+/* Style pour les éléments de filtre */
+/* .filters input[type='text'],
+.filters select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+} */
+.filters-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px; /* Space between the select elements */
+  align-items: center; /* Align vertically in the middle */
+  margin-bottom: 20px; /* Space below the filter container */
+}
+
+/* Optional: Adjusting the appearance of select elements */
+.filter-select {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.favorite-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.favorite-button.favorited {
+  color: red;
+}
+
+.star {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.star.selected {
+  color: #ffd700;
+}
+.reserve-button {
+  background-color: #3498db; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  border: none; /* Supprimer les bordures par défaut */
+  border-radius: 4px; /* Coins arrondis */
+  padding: 12px 20px; /* Espacement intérieur */
+  font-size: 16px; /* Taille de la police */
+  font-weight: bold; /* Mettre le texte en gras */
+  cursor: pointer; /* Curseur de la souris en main */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Effets de transition */
+}
+
+.reserve-button:hover {
+  background-color: #2980b9; /* Couleur de fond au survol */
+  transform: scale(1.05); /* Agrandir légèrement le bouton */
+}
+
+.reserve-button:active {
+  background-color: #1f639b; /* Couleur de fond lors du clic */
+  transform: scale(0.98); /* Réduire légèrement le bouton lors du clic */
+}
+
+.reserve-button:focus {
+  outline: none; /* Supprimer le contour de focus */
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.5); /* Ajouter une ombre portée */
+}
+/* Style du label */
+label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 5px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+/* Style de la case à cocher */
+input[type="checkbox"] {
+  accent-color: #007bff; /* Couleur de la case à cocher, changeable selon les besoins */
+  margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}
+
+/* Style au survol du label */
+label:hover {
+  color: #007bff; /* Couleur du texte au survol */
+  background-color: #f0f0f0; /* Couleur de fond au survol */
+  border-radius: 4px; /* Coins arrondis au survol */
+  padding: 5px 10px; /* Espace intérieur au survol */
+}
+
+/* Style lorsque la case est cochée (si besoin d'une indication visuelle) */
+input[type="checkbox"]:checked + span {
+  font-weight: bold; /* Mettre en gras le texte si nécessaire */
+}
+/* Styles pour les messages */
+.message-container {
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-align: center;
+  max-width: 100%;
+  color: #fff;
+}
+
+/* Message de succès */
+.success-message1 {
+  color: #155724;
+  background-color: #d4edda;
+  padding: 10px;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Message d'erreur */
+.error-message1 {
+  color: #721c24;
+  background-color: #f8d7da;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}

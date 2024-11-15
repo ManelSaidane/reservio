@@ -1,0 +1,85 @@
+.categories-container {
+  width: 100%;
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categories-container h1 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.categories-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 800px; /* Limite la largeur des éléments à 800px */
+}
+
+.categories-list li {
+  background-color: #f2f2f2;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.categories-list li button {
+  background-color: #d2b48c; /* Couleur nude marron */
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.categories-list li button:hover {
+  background-color: #b1916e; /* Nuance plus foncée */
+}
+
+.new-category-form button {
+  width: 100%;
+  max-width: 200px; /* Limite la largeur du bouton à 200px */
+  background-color: #d2b48c; /* Couleur nude marron */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+.new-category-form {
+  width: 100%;
+  max-width: 800px; /* Limite la largeur du formulaire à 800px */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-category-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+
+

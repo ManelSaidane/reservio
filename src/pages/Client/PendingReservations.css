@@ -1,0 +1,76 @@
+/* PendingReservations.css */
+
+.pending-reservations-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 90px;
+    /* background-color: #f7f7f7; */
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pending-reservations-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .pending-reservations-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pending-reservation-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pending-reservation-item p {
+    margin: 5px 0;
+  }
+  
+  .pending-reservation-item p strong {
+    font-weight: bold;
+  }
+  
+  .pending-reservation-item button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pending-reservation-item button:hover {
+    background-color: #c9302c;
+  }
+  
+  @media (max-width: 600px) {
+    .pending-reservations-container {
+      padding: 10px;
+    }
+  
+    .pending-reservations-container h1 {
+      font-size: 1.2rem;
+    }
+  
+    .pending-reservation-item {
+      padding: 15px;
+    }
+  
+    .pending-reservation-item button {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  

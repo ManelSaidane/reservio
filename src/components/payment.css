@@ -1,0 +1,68 @@
+/* Section des paiements */
+.payments-section {
+  padding: 1.5rem; /* Réduit le padding */
+  background-color: #f2eeee;
+  color: #2B2424;
+  overflow-x: hidden;
+  margin-top: 60px; /* Pour éviter le chevauchement avec la navbar */
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Options de paiement */
+.payment-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ajuste l'espacement entre les éléments */
+  margin-top: 1.5rem; /* Réduit l'espacement au-dessus des options de paiement */
+}
+
+/* Option de paiement individuelle */
+.payment-option {
+  flex: 1 1 30%;
+  background-color: #BCADAD;
+  padding: 1rem; /* Réduit le padding */
+  margin: 0.5rem; /* Réduit la marge */
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); /* Réduit l'intensité de l'ombre */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.payment-option:hover {
+  transform: translateY(-3px); /* Réduit l'élévation au survol */
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3); /* Réduit l'intensité de l'ombre au survol */
+}
+
+.payment-option h3 {
+  font-size: 1.5rem; /* Réduit la taille du titre */
+  margin-bottom: 0.5rem; /* Réduit l'espacement sous le titre */
+  color: #2B2424;
+}
+
+.payment-option p {
+  font-size: 1rem; /* Réduit la taille du texte */
+  line-height: 1.5; /* Ajuste la hauteur de ligne */
+  color: #2B2424;
+}
+
+.payment-icon {
+  width: 40px; /* Réduit la largeur de l'icône */
+  height: 40px; /* Réduit la hauteur de l'icône */
+}
+
+/* Styles responsive */
+@media (max-width: 768px) {
+  .payment-option {
+    flex: 1 1 100%; /* Passe à une colonne sur les petits écrans */
+    margin: 0.5rem 0; /* Ajuste la marge pour les petits écrans */
+  }
+}

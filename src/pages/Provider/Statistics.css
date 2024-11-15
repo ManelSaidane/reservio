@@ -1,0 +1,67 @@
+/* .dashboard {
+  padding: 10px;
+  margin-top: 10px;
+  max-width: 1000px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 100px auto; /* Centrer le tableau de bord horizontalement et ajouter un espacement en haut */
+  display: flex;
+  flex-direction: column; /* Permet de centrer le contenu verticalement */
+  align-items: center; /* Centrer le contenu verticalement */
+} */
+
+.dashboard-title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap; /* Permet à chaque élément de s'enrouler lorsqu'il atteint la largeur maximale */
+  gap: 20px;
+  justify-content: center; /* Centrer les éléments horizontalement */
+  width: 100%; /* Ajuster la largeur pour s'adapter à la taille parente */
+}
+
+.stat-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Prend toute la largeur disponible */
+  max-width: 300px; /* Largeur maximale pour chaque élément stat */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-item h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.stat-item p {
+  font-size: 1.5em;
+  color: #666;
+}
+
+.chart-container {
+  width: 100%; /* Prend toute la largeur disponible */
+  max-width: 400px; /* Ajuster la largeur maximale du graphique */
+  margin: 0 auto; /* Centrer le graphique horizontalement */
+}
+
+@media (min-width: 600px) {
+  .stats-container {
+    justify-content: space-between; /* Espace équitablement les éléments sur les grands écrans */
+  }
+
+  .stat-item {
+    max-width: calc(50% - 20px); /* Réduire la largeur maximale des éléments stat sur les grands écrans */
+  }
+
+  .chart-container {
+    max-width: 45%; /* Réduire la largeur maximale du graphique sur les grands écrans */
+  }
+}

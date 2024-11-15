@@ -1,0 +1,136 @@
+/* Styles for AdminDashboard layout */
+
+.admin-dashboard {
+  display: flex;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 50px;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.providers-section {
+  margin-bottom: 20px;
+}
+
+.providers-table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 50px;
+}
+
+.providers-table th,
+.providers-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.providers-table th {
+  background-color: #f9f9f9;
+}
+
+.providers-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.provider-info {
+  display: flex;
+  align-items: center;
+}
+
+.provider-avatar {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  border-radius: 50%; /* Optional: to make the image circular */
+  margin-right: 10px;
+}
+
+.user-role {
+  font-size: 12px;
+  color: gray;
+}
+
+.stats-container {
+  margin-top: 20px;
+}
+
+.box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.stats-container h2 {
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+  }
+}
+
+/* Search bar styles */
+.search-bar {
+  margin-bottom: 10px;
+  padding: 8px; /* Reduced padding */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  width: 100%; /* Full width */
+}
+
+.search-bar input {
+  flex: 1; /* Take remaining space */
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 8px; /* Reduced padding */
+}
+
+.search-icon {
+  margin-right: 8px; /* Reduced margin */
+  width: 16px; /* Reduced size */
+  height: 16px; /* Reduced size */
+  fill: #aaa; /* Adjust color of search icon */
+  cursor: pointer;
+}
+
+.search-bar input:focus + .search-icon {
+  fill: #007bff; /* Adjust color of search icon when input is focused */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+  filter: blur(3px); /* Ajoute un flou */
+}
+
+.button.unblocked {
+  background-color: #4CAF50; /* Vert */
+}
+
+.button.blocked {
+  background-color: #F44336; /* Rouge */
+}
+
+.button:hover {
+  filter: blur(0); /* Supprime le flou au survol */
+}

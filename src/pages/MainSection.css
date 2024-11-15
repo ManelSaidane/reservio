@@ -1,0 +1,393 @@
+/* Section principale */
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2eeee;
+  color: #2B2424;
+  overflow-x: hidden;
+  margin-top: 60px; /* Pour éviter le chevauchement avec la navbar */
+  animation: fadeIn 1s ease-in-out;
+  font-family: 'Arial', sans-serif; /* Utilisation d'une police de base */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Contenu principal */
+.main-content {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.main-content h1 {
+  font-size: 2.5rem; /* Réduit la taille du titre principal */
+  font-weight: bold; /* Poids de la police */
+  color: #2B2424;
+}
+
+.main-content p {
+  font-size: 1rem; /* Réduit la taille du texte */
+  line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+  max-width: 800px; /* Limiter la largeur du texte */
+  margin: 0 auto; /* Centrer le texte */
+}
+
+/* Section des utilisateurs */
+.our-users {
+  width: 75%;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.our-users h2 {
+  font-size: 2rem; /* Réduit la taille du titre secondaire */
+  font-weight: bold; /* Poids de la police */
+  color: #2B2424;
+  margin-bottom: 1rem; /* Espacement sous le titre */
+}
+
+.user-boxes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.user-box {
+  background-color: #BCADAD;
+  padding: 1.5rem 1rem; /* Réduit le padding */
+  width: 25%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* Réduit l'intensité de l'ombre */
+  border-radius: 8px;
+  margin: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-box h3 {
+  font-size: 1.5rem; /* Réduit la taille du titre dans la boîte utilisateur */
+  font-weight: bold; /* Poids de la police */
+  color: #2B2424;
+  margin-bottom: 0.5rem; /* Espacement sous le titre */
+}
+
+.user-box p {
+  font-size: 0.9rem; /* Réduit la taille du texte */
+  line-height: 1.5; /* Hauteur de ligne */
+  margin-bottom: 0.5rem; /* Espacement entre les paragraphes */
+}
+
+.user-box img {
+  width: 50px; /* Réduit la taille de l'image */
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Section Pourquoi nous choisir */
+.why-choose-us {
+  text-align: center;
+  margin: 2rem 0;
+  width: 75%;
+}
+
+.why-choose-us h2 {
+  font-size: 2rem; /* Réduit la taille du titre secondaire */
+  font-weight: bold; /* Poids de la police */
+  color: #2B2424;
+  margin-bottom: 1rem; /* Espacement sous le titre */
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature {
+  flex: 1 1 30%;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem; /* Réduit le padding */
+  background-color: #BCADAD;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Réduit l'intensité de l'ombre */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature h3 {
+  font-size: 1.5rem; /* Réduit la taille du titre dans la fonctionnalité */
+  font-weight: bold; /* Poids de la police */
+  color: #2B2424;
+  margin-bottom: 0.5rem; /* Espacement sous le titre */
+}
+
+.feature p {
+  font-size: 0.9rem; /* Réduit la taille du texte */
+  line-height: 1.6; /* Hauteur de ligne */
+  margin-bottom: 1rem; /* Espacement entre les paragraphes */
+}
+
+.feature img {
+  max-width: 80px; /* Réduit la taille maximale de l'image */
+  margin-bottom: 0.5rem;
+}
+
+/* Section FAQ */
+.faq {
+  width: 75%;
+  margin: 2rem auto; /* Centrer horizontalement */
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 2rem; /* Taille du titre */
+  font-weight: bold; /* Poids de la police */
+  color: #2B2424;
+  margin-bottom: 1rem; /* Espacement sous le titre */
+}
+
+.faq-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-item {
+  background-color: #BCADAD;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.faq-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2B2424;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+
+
+/* Section Services */
+.services-section {
+  width: 75%;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2rem; /* Taille du titre */
+  font-weight: bold; /* Poids de la police */
+  color: #2B2424;
+  margin-bottom: 1rem; /* Espacement sous le titre */
+}
+
+.service {
+  background-color: #BCADAD;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.service p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem; /* Espacement entre les paragraphes */
+}
+
+/* Section Contact */
+.contact-section {
+  width: 75%;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem; /* Taille du titre */
+  font-weight: bold; /* Poids de la police */
+  color: #2B2424;
+  margin-bottom: 1rem; /* Espacement sous le titre */
+}
+
+.contact-form {
+  background-color: #BCADAD;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+.contact-form button {
+  background-color: #2B2424;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #5c4d4d;
+}
+.news-updates {
+  width: 75%;
+  text-align: center;
+  margin: 2rem auto; /* Centrer horizontalement */
+}
+
+.news-updates h2 {
+  font-size: 2rem; /* Réduit la taille du titre secondaire */
+  font-weight: bold; /* Poids de la police */
+  color: #2B2424;
+  margin-bottom: 1rem; /* Espacement sous le titre */
+}
+
+.news-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news-box {
+  background-color: #BCADAD;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.news-box h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2B2424;
+  margin-bottom: 0.5rem;
+}
+
+.news-box p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Section Promotions */
+.promotions {
+  width: 75%; /* Largeur de la section */
+  max-width: 1200px; /* Largeur maximale pour écrans larges */
+  margin: 0 auto; /* Centrer horizontalement */
+  text-align: center; /* Centrer le texte */
+  padding: 2rem 0; /* Espacement interne */
+}
+
+.promotions h2 {
+  font-size: 2rem; /* Taille du titre */
+  font-weight: bold; /* Poids de la police */
+  color: #2B2424;
+  margin-bottom: 2rem; /* Espacement sous le titre */
+}
+
+/* Conteneur pour les éléments de promotion */
+.promotion-items {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante si nécessaire */
+  justify-content: center; /* Centre les éléments horizontalement */
+  gap: 1.5rem; /* Espacement entre les éléments */
+}
+
+/* Style des éléments de promotion */
+.promotion-item {
+  background-color: #BCADAD;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  width: 300px; /* Largeur fixe pour une meilleure disposition */
+  text-align: center; /* Centre le texte à l'intérieur des éléments */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promotion-item:hover {
+  transform: scale(1.05); /* Agrandissement au survol */
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.promotion-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2B2424;
+  margin-bottom: 0.5rem;
+}
+
+.promotion-item p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+
+/* Bouton S'inscrire */
+.inscrire-button {
+  background-color: #2B2424;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.inscrire-button:hover {
+  background-color: #1a1a1a;
+}
+
+.notification {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 20px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.notification p {
+  margin: 0;
+  flex: 1;
+}
+
+.close-notification {
+  background: none;
+  border: none;
+  color: #721c24;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}

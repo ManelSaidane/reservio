@@ -1,0 +1,117 @@
+.demandes-page {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    margin-top: 3rem;
+    color: black;
+  }
+  
+  .demandes-page h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .demandes-page ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .tabssss {
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+    margin-left: 550px; 
+}
+
+.tabssss button {
+    padding: 8px 16px; 
+    font-size: 14px;
+    color: #fff; 
+    background-color: #565e67; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.tabssss button:hover {
+    background-color: #565e67;
+}
+
+.tabssss button:disabled {
+    background-color: #c0c0c0; 
+    cursor: not-allowed; 
+}
+
+.tabssss button.active {
+    background-color: #9e916e; 
+}
+
+  .demande-item {
+    margin: 0 auto; /* Pour centrer horizontalement */
+    margin-bottom: 2rem;
+    width: 60%;
+    padding: 50px;
+    background-color: #f2eeee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .cent {
+    text-align: center;
+  }
+  
+  .demande-item h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .demande-item p {
+    margin-bottom: 1rem;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .actions button {
+    padding: 0.5rem 2rem;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .actions button:hover {
+    background-color: #0056b3;
+  }
+  .actions button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.account-blocked-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    color: #155724;
+    background-color: #d4edda;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}

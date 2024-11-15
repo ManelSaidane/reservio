@@ -1,0 +1,41 @@
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Ajustez cette valeur en fonction de la hauteur de votre navbar */
+    background-color: #e0f7fa;
+    margin-top: 60px; /* Ajustez cette valeur en fonction de la hauteur de votre navbar */
+  }
+  
+  .success-message {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    border: 1px solid #4caf50;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .success-message h1 {
+    color: #4caf50;
+    margin-bottom: 1rem;
+  }
+  
+  .success-message p {
+    color: #333333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .success-message a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #4caf50;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .success-message a:hover {
+    background-color: #388e3c;
+  }
+  

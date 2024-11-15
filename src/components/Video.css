@@ -1,0 +1,40 @@
+/* src/components/Video.css */
+
+.video-background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Occupe toute la hauteur de la fenêtre */
+    overflow: hidden;
+  }
+  
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que la vidéo couvre toute la zone sans déformation */
+   
+  }
+  
+  .search-bar {
+    position: absolute;
+    top: 20px; /* Espacement du haut */
+    left: 50%;
+    transform: translateX(-50%); /* Centre horizontalement */
+    width: 80%;
+    max-width: 500px; /* Largeur maximale */
+    background: rgba(255, 255, 255, 0.8); /* Fond semi-transparent pour lisibilité */
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  

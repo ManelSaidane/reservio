@@ -1,0 +1,54 @@
+/* Conteneur principal pour centrer le formulaire */
+.auth-page-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Hauteur minimale pour la page moins la hauteur de la barre de navigation */
+  background-color: #f2eeee;
+  padding: 70px; /* Padding autour du conteneur */
+  box-sizing: border-box; /* Inclure le padding dans les dimensions totales */
+}
+
+/* Style du formulaire */
+.auth-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Prendre toute la largeur disponible */
+  max-width: 600px; /* Largeur maximale pour le formulaire */
+  background-color: #BCADAD;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Ombre pour plus de contraste */
+  border-radius: 8px;
+  padding: 2rem; /* Espacement interne pour le contenu */
+  box-sizing: border-box; /* Inclure le padding et la bordure dans les dimensions totales */
+}
+
+/* Styles du formulaire */
+.auth-page form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Utiliser toute la largeur du conteneur */
+  align-items: center; /* Centrer les éléments du formulaire */
+}
+
+/* Styles des champs du formulaire */
+.auth-page input,
+.auth-page button {
+  margin-bottom: 15px; /* Augmenter l'espace entre les éléments */
+  padding: 15px; /* Augmenter le padding des champs pour plus de confort */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%; /* Champs prennent toute la largeur du formulaire */
+}
+
+/* Style spécifique pour le bouton */
+.auth-page button {
+  background-color: #ff497c;
+  color: white;
+  cursor: pointer;
+}
+
+.auth-page button:hover {
+  background-color: #37b896;
+}

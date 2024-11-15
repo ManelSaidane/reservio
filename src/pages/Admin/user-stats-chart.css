@@ -1,0 +1,20 @@
+.stats-container-user {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+.stats-container-user h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.stats-container-user canvas {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,64 @@
+/* Footer.css */
+
+/* Styles de base pour le footer */
+.footer {
+  background-color: #BCADAD; /* Couleur de fond du footer */
+  color: #2B2424; /* Couleur du texte */
+  padding: 15px; /* Espacement intérieur */
+  text-align: center; /* Centre le texte */
+  position: relative; /* Permet l'alignement des éléments enfants */
+  border-top: 1px solid #7f7e5f; /* Bordure supérieure pour la séparation */
+}
+
+/* Contenu du footer */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Permet au contenu de se réorganiser en plusieurs lignes */
+  margin-bottom: 20px; /* Espacement en bas du contenu */
+}
+
+/* Sections du footer */
+.footer-section {
+  flex: 1;
+  min-width: 200px; /* Largeur minimale pour chaque section */
+  padding: 10px; /* Espacement intérieur des sections */
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Espacement en bas du titre */
+}
+
+/* Liste des icônes sociales */
+.social-icons {
+  list-style: none; /* Supprime les puces */
+  padding: 0; /* Supprime le padding */
+  display: flex;
+  justify-content: center; /* Centre les icônes socialement */
+}
+
+.social-icons li {
+  margin: 0 10px; /* Espacement entre les icônes */
+}
+
+/* Icônes sociales */
+.social-icon {
+  transition: transform 0.3s ease; /* Transition douce pour l'effet de zoom */
+}
+
+.social-icons a:hover .social-icon {
+  transform: scale(1.1); /* Agrandit l'icône au survol */
+}
+
+/* Bas du footer */
+.footer-bottom {
+  border-top: 1px solid #7f7e5f; /* Bordure supérieure pour la séparation */
+  padding-top: 10px; /* Espacement supérieur */
+}
+
+.footer-bottom .copyright {
+  font-size: 14px;
+  margin: 0; /* Supprime les marges */
+}

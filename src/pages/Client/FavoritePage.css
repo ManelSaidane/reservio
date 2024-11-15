@@ -1,0 +1,58 @@
+.favorite-item {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff; /* Couleur de fond propre */
+  border-radius: 12px;
+  margin-bottom: 16px;
+  padding: 30px 24px;
+  margin-right: 100px;
+margin-left: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre douce pour un effet moderne */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.favorite-item:hover {
+  transform: translateY(-5px); /* Légère élévation au survol */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Ombre plus prononcée */
+}
+
+.favorite-image {
+  width: 10%; /* Taille de l'image */
+  height: 10%;
+  object-fit: cover;
+  border-radius: 8px; /* Coins arrondis pour un aspect soigné */
+  object-fit: cover; /* Redimensionne l'image pour qu'elle reste proportionnelle */
+  margin-right: 40%; /* Espacement entre l'image et le texte */
+}
+
+.service-details {
+  flex: 1;
+  font-family: 'Arial', sans-serif; /* Police de caractères professionnelle */
+  font-size: 16px;
+  color: #333; /* Couleur du texte sombre */
+}
+
+.delete-button {
+  background-color: #ef5350; /* Rouge vif pour attirer l'attention */
+  color: #ffffff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px; /* Coins arrondis subtils */
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f; /* Rouge plus sombre pour l'effet hover */
+}
+.service-image2 {
+  width: 500px; /* Ajustez la largeur selon vos besoins */
+  height: 80px; /* Ajustez la hauteur selon vos besoins */
+  border-radius: 8px; /* Coins arrondis pour une apparence élégante */
+  object-fit: cover; /* Maintient l'image proportionnelle et la recadre si nécessaire */
+  margin-right: 16px; /* Espacement entre l'image et le texte */
+  margin-left: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'image */
+}

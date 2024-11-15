@@ -1,0 +1,137 @@
+.provider-services {
+  padding: 2rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #f9f9f9;
+  margin-top: 3rem;
+  color: black;
+}
+
+.provider-services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.provider-services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.provider-services li {
+  margin-bottom: 2rem;
+  max-width: 100%;
+  padding: 1.5rem;
+  background-color: #f2eeee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.account-blocked-messagee {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 50px;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-container .button-groupe {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-container .button-groupe {
+  display: flex;
+  justify-content: center; /* Centre les boutons horizontalement */
+  gap: 10px; /* Espace entre les boutons */
+  margin-top: 20px; /* Espace au-dessus du groupe de boutons */
+}
+
+.service-container .button-groupe button {
+  background-color: #f2eeee; /* Couleur proche de la couleur de votre page */
+  color: black;
+  border: none;
+  padding: 15px 30px; /* Augmente la taille des boutons */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px; /* Augmente la taille du texte */
+  cursor: pointer;
+  border-radius: 8px; /* Augmente le rayon des coins arrondis */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.service-container .button-group button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05); /* Agrandit légèrement le bouton au survol */
+}
+
+.service-container .button-group button:disabled {
+  background-color: #cccccc;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.service-container input,
+.service-container select,
+.service-container textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+
+
+.service-container label {
+  font-weight: bold;
+}
+/* .service-container .image {
+  max-width: 100%; 
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+.service-image {
+  width: 300px; /* Définissez la largeur souhaitée */
+  height: auto; /* Hauteur automatique proportionnelle */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Test pour voir si les styles s'appliquent */
+.test-button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.test-button-group button {
+  background-color: #f2eeee;
+  color: black;
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.test-button-group button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.test-button-group button:disabled {
+  background-color: #cccccc;
+  color: #999999;
+  cursor: not-allowed;
+}
