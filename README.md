@@ -1,2 +1,4 @@
 # Reservio
 I developed a booking application in French using React Native, React.js, and Nest.js. Leveraged GitLab for version control, Docker for containerization, Prisma for ORM, and PostgreSQL for database management. 
+
+**Reservio** is an online scheduling and booking management platform designed to simplify appointment booking for businesses and individuals. It caters to industries like healthcare, wellness, education, and events, offering features such as customizable booking pages, automated reminders, and staff resource management. Integrations with tools like Google Calendar and social media platforms make it accessible and versatile. Businesses benefit from streamlined scheduling and analytics, while customers enjoy a convenient, 24/7 booking experience. Reservio is ideal for modernizing appointment systems and enhancing customer satisfaction.
