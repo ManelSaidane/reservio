@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+            width: 100px;
+        }
+        .header h1 {
+            text-align: right;
+            margin: 0;
+        }
+        .details, .items {
+            margin: 20px 0;
+        }
+        .details h2, .items h2 {
+            margin-bottom: 10px;
+        }
+        .items table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .items table, .items th, .items td {
+            border: 1px solid #ddd;
+        }
+        .items th, .items td {
+            padding: 8px;
+            text-align: left;
+        }
+        .items th {
+            background-color: #f4f4f4;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .signature {
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="company-info">
+                <h1>Company Name</h1>
+                <p>Address Line 1</p>
+                <p>Address Line 2</p>
+                <p>Phone: +1234567890</p>
+                <p>Email: contact@company.com</p>
+            </div>
+            <img src="logo.png" alt="Company Logo">
+        </div>
+
+        <div class="details">
+            <h2>Invoice Details</h2>
+            <p><strong>Invoice Number:</strong> INV-001</p>
+            <p><strong>Date:</strong> 2024-08-13</p>
+            <p><strong>Due Date:</strong> 2024-09-13</p>
+            <p><strong>Customer:</strong> John Doe</p>
+            <p><strong>Email:</strong> johndoe@example.com</p>
+        </div>
+
+        <div class="items">
+            <h2>Invoice Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Service 1</td>
+                        <td>1</td>
+                        <td>$100.00</td>
+                        <td>$100.00</td>
+                    </tr>
+                    <tr>
+                        <td>Service 2</td>
+                        <td>2</td>
+                        <td>$50.00</td>
+                        <td>$100.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" style="text-align: right;">Subtotal</td>
+                        <td>$200.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align: right;">Tax (10%)</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align: right;">Total</td>
+                        <td>$220.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p>Thank you for your business!</p>
+            <p>For any inquiries, contact us at +1234567890 or email us at contact@company.com</p>
+        </div>
+
+        <div class="signature">
+            <img src="./assets/signature.png" alt="Signature" width="150">
+            <p>Authorized Signature</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+</head>
+<body>
+    <h1>Inscription</h1>
+    <form action="/users/register" method="POST">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+      
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+      
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="motdepasse">Mot de passe :</label>
+        <input type="password" id="motdepasse" name="motdepasse" required>
+      
+        <label for="role">Rôle :</label>
+        <select id="role" name="role" required>
+            <option value="client">Client</option>
+            <option value="service_provider">Service Provider</option>
+        </select>
+      
+        <div id="paiementFields" style="display: none;">
+            <!-- Champs pour les informations de paiement (numéro de carte, etc.) -->
+            <label for="numerocarte">Numéro de carte :</label>
+            <input type="text" id="numerocarte" name="numerocarte">
+      
+            <!-- Ajoutez d'autres champs pour les informations de paiement si nécessaire -->
+        </div>
+      
+        <button type="submit">S'inscrire</button>
+    </form>
+</body>
+</html>

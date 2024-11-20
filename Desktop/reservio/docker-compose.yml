@@ -1,0 +1,17 @@
+version: '3.7'
+networks:
+  db_network:
+services:
+  postgres:
+    container_name: postgres
+    image: 'postgres:13.6'
+    networks:
+      - db_network
+    restart: unless-stopped
+    ports:
+      - '127.0.0.1:5434:5432'
+    volumes:
+      - ./docker_volumes/postgres_13:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=pass123

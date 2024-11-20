@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Utilisateurs</title>
+    <style>
+        /* Ajoutez ici vos styles CSS */
+    </style>
+</head>
+<body>
+    <h1>Liste des Utilisateurs</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Email</th>
+                <th>Rôle</th>
+            </tr>
+        </thead>
+        <tbody id="usersTableBody">
+            <!-- Les données des utilisateurs seront affichées ici -->
+        </tbody>
+    </table>
+
+    <script>
+        // Script JavaScript pour récupérer et afficher les données des utilisateurs
+        // Script JavaScript pour récupérer et afficher les données des utilisateurs
+fetch('/users')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Erreur lors de la récupération des utilisateurs : ' + response.statusText);
+        }
+        return response.json();
+    })
+    .then(users => {
+        const usersTableBody = document.getElementById('usersTableBody');
+        users.forEach(user => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${user.ID}</td>
+                <td>${user.Nom}</td>
+                <td>${user.Prenom}</td>
+                <td>${user.Email}</td>
+                <td>${user.Role}</td>
+            `;
+            usersTableBody.appendChild(row);
+        });
+    })
+    .catch(error => console.error('Erreur lors de la récupération des utilisateurs :', error));
+
+    </script>
+</body>
+</html>
